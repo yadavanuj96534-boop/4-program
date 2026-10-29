@@ -1,0 +1,28 @@
+#include <stdio.h>
+int main()
+ {
+    int secret=25;
+    int guess;
+    int attemt=0;
+    printf("Guess the number\n.");
+    printf("guess the number between 1 to 25:");
+    scanf("%d",&guess);
+    while(guess != secret)
+    {
+        attemt++;
+        if (guess > secret)
+        {
+            printf("Too High! Try Again.\n");
+        }
+        else
+        {
+            printf("Too Low! Try Again.\n");
+        }
+        printf("\nGuess a number between 1 and 50:");
+    }
+    attemt++;
+    printf("\nCongratulation! You guessed the correct number.\n");
+    printf("Total Attemt: %d\n", attemt);
+    printf("=====Game Over=====");
+    return 0;
+}
